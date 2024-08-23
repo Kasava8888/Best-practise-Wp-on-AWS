@@ -12,10 +12,10 @@ resource "aws_security_group" "ec2iec" {
   description = "ec2 endpoint"
   vpc_id      = var.vpc_id
   egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+    # from_port   = 0
+    # to_port     = 0
+    # protocol    = "-1"
+    # cidr_blocks = ["0.0.0.0/0"]
 }
 }
 resource "aws_security_group" "wp-sg" {
